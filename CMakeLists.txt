@@ -11,6 +11,9 @@ set(SOURCES
     ${CMAKE_SOURCE_DIR}/src/Game/Screen.cpp
     ${CMAKE_SOURCE_DIR}/src/Game/HostNode.cpp
     ${CMAKE_SOURCE_DIR}/src/Game/ProgramCard.cpp
+    ${CMAKE_SOURCE_DIR}/src/Game/Player.cpp
+    ${CMAKE_SOURCE_DIR}/src/Game/NetworkGraph.cpp
+    ${CMAKE_SOURCE_DIR}/src/Debug/NodeTesting.cpp
 )
 
 add_executable(main ${SOURCES})

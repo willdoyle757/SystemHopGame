@@ -2,7 +2,8 @@
 
 #include <unordered_map>
 #include <vector>
-#include "HostNode.h"
+
+class HostNode;
 
 class NetworkGraph
 {
