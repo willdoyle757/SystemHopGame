@@ -1,6 +1,18 @@
 #include "ProgramCard.h"
 #include "Player.h"
 
+ProgramCard::ProgramCard(std::string name, int size, int load, OffensiveStats offense, DefensiveStats defense, UtilityStats utility)
+{
+    generalStats.Name = name;
+    generalStats.Size = size;
+    generalStats.ComputationalLoad = load;
+
+    offenseStats = offense;
+    defenseStats = defense;
+    utilityStats = utility;
+
+}
+
 GeneralStats ProgramCard::GetGeneralStats()
 {
     return ProgramCard::generalStats;
@@ -25,3 +37,4 @@ void ProgramCard::AddOwner(Player* player)
 {
     ProgramCard::generalStats.Owner = player;
 }
+

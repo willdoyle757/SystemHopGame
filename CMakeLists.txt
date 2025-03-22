@@ -9,11 +9,12 @@ set(SOURCES
     ${CMAKE_SOURCE_DIR}/main.cpp
     ${CMAKE_SOURCE_DIR}/src/Game/Game.cpp
     ${CMAKE_SOURCE_DIR}/src/Game/Screen.cpp
-    ${CMAKE_SOURCE_DIR}/src/Game/HostNode.cpp
-    ${CMAKE_SOURCE_DIR}/src/Game/ProgramCard.cpp
-    ${CMAKE_SOURCE_DIR}/src/Game/Player.cpp
-    ${CMAKE_SOURCE_DIR}/src/Game/NetworkGraph.cpp
+    ${CMAKE_SOURCE_DIR}/src/Entities/HostNode.cpp
+    ${CMAKE_SOURCE_DIR}/src/Entities/ProgramCard.cpp
+    ${CMAKE_SOURCE_DIR}/src/Entities/Player.cpp
+    ${CMAKE_SOURCE_DIR}/src/Entities/NetworkGraph.cpp
     ${CMAKE_SOURCE_DIR}/src/Debug/NodeTesting.cpp
+    ${CMAKE_SOURCE_DIR}/src/Rendering/MapRenderer.cpp
 )
 
 add_executable(main ${SOURCES})

@@ -2,9 +2,9 @@
 #include <iostream>
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_video.h>
+#include "../Rendering/MapRenderer.h"
 
 class Screen {
-
 
 public:
     const int WIDTH = 800, HEIGHT = 600;
@@ -18,7 +18,7 @@ private:
 public:
     Screen();
     void Init();
-    void Update();
+    void Update(NetworkGraph *network);
     void Draw();
     void Clear();
     void Close();

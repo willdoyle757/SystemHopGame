@@ -41,11 +41,10 @@ int Run()
         if (display)
         {
             //render rectangle with png texture
-            screen.Update();
+            //screen.Update();
         }
         //draw current render
         screen.Draw();
-
     }
 
     
