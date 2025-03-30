@@ -14,7 +14,8 @@ class MapRenderer
 public:
 
     MapRenderer(SDL_Renderer *ren);
+    ~MapRenderer();
     
-
     void RenderMap(NetworkGraph *graph);
+    
 };

@@ -5,6 +5,7 @@
 void RunTest();
 
 NetworkGraph* CreateNetworkA();
+NetworkGraph* CreateNetworkB();
 
 void DisplayCardsOnHostStorage(HostNode* host);
 

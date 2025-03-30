@@ -10,14 +10,14 @@
 #include "../Entities/HostNode.h"
 #include "../Entities/ProgramCard.h"
 #include "../Entities/NetworkGraph.h"
-
+#include "../Utils/LoadDataHelper.h"
 
 
 void RunTest()
 {
 
     std::cout << "Starting Test" << std::endl;
-    NetworkGraph * ng = CreateNetworkA();
+    NetworkGraph * ng = CreateNetworkB();
     DisplayNetwork(ng);
 
     OffensiveStats offenseA(0, 0, 0, 0);
@@ -57,6 +57,16 @@ void RunTest()
     delete ng;
     screen.Close();
 }
+
+NetworkGraph* CreateNetworkB()
+{
+    NetworkGraph *NG = new NetworkGraph();
+    LoadHostNode("../data/networkData1.txt", NG);
+    LoadNetworkGraph("../data/networkData1.txt", NG);
+
+    return NG;
+}
+
 
 NetworkGraph* CreateNetworkA()
 {

@@ -12,6 +12,16 @@ MapRenderer::MapRenderer(SDL_Renderer *ren)
     MapRenderer::MapTexture = IMG_LoadTexture(MapRenderer::renderer, "../assets/pc-icon.png");
 }
 
+MapRenderer::~MapRenderer()
+{
+    if (MapTexture)
+    {
+        SDL_DestroyTexture(MapTexture);
+        MapTexture = nullptr;
+    }
+    renderer = nullptr;
+}
+
 void MapRenderer::RenderMap(NetworkGraph *graph)
 {
     

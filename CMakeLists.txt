@@ -15,6 +15,7 @@ set(SOURCES
     ${CMAKE_SOURCE_DIR}/src/Entities/NetworkGraph.cpp
     ${CMAKE_SOURCE_DIR}/src/Debug/NodeTesting.cpp
     ${CMAKE_SOURCE_DIR}/src/Rendering/MapRenderer.cpp
+    ${CMAKE_SOURCE_DIR}/src/Utils/LoadDataHelper.cpp
 )
 
 add_executable(main ${SOURCES})

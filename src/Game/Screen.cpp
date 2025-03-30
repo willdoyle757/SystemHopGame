@@ -42,8 +42,7 @@ void Screen::Init(){
 void Screen::Update(NetworkGraph *network)
 {
     Screen::Clear();
-    SDL_RenderCopy(Screen::ren, Screen::texture, NULL, &iconRect);
-    SDL_RenderDrawRect(Screen::ren, &iconRect);
+    
     MapRenderer MR(Screen::ren);
     MR.RenderMap(network);
 
