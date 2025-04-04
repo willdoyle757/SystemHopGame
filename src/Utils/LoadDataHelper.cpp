@@ -73,7 +73,7 @@ void LoadNetworkGraph(std::string filename, NetworkGraph* NG)
             connectionSection = true;
             continue;
         }
-        if (connectionSection) 
+        if (connectionSection)  
         {
             std::cout << line << std::endl;
             std::vector<std::string> nodeConnection = splitLine(line);
